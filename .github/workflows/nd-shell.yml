@@ -31,7 +31,7 @@ jobs:
 
       - name: Cleanup Workspace
         run: |
-          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
+          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php
 
       - name: Setup bot for building kernel and others
         run: |
