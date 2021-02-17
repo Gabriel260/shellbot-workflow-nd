@@ -36,7 +36,6 @@ jobs:
         run: |
           sudo -E apt-get -qq install bc build-essential zip curl gem libstdc++6 git wget python gcc clang libssl-dev repo rsync flex curl  bison aria2 libncurses5-dev
 
-
       - name: Re-install nodejs and npm
         run: |
           curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
