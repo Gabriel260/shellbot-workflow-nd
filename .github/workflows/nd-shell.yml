@@ -30,7 +30,8 @@ jobs:
           echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
 
       - name: Cleanup Workspace
-        uses: rokibhasansagar/slimhub_actions@main
+        run: |
+          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
 
       - name: Setup bot for building kernel and others
         run: |
