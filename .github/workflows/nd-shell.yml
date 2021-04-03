@@ -35,8 +35,9 @@ jobs:
 
       - name: Setup bot for building kernel and others
         run: |
-          sudo apt update
-          sudo -E apt-get -qq install bc build-essential zip gem libstdc++6 git wget python gcc clang libssl-dev rsync flex curl  bison aria2 libncurses5-dev
+          sudo apt update -y
+          sudo -E apt-get -qq install bc build-essential zip gem ruby libstdc++6 git wget python libssl-dev flex curl bison aria2 libncurses5-dev
+          sudo gem install rmega
 
       - name: Re-install nodejs and npm
         run: |
